@@ -1,0 +1,287 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>AutoPrix  - Details</title>
+  <meta name="description" content="Web scraping, Flask deployment and Power BI visualization for Tunisian used cars.">
+  <meta name="keywords" content="Web Scraping, Flask, Power BI, Data Science, Tunisia Cars">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Custom style to create the split layout while preserving your original design */
+    .split-layout {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    align-items: center; /* centre verticalement texte et image */
+    }
+
+    .image-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px;
+    }
+
+    .info-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 15px;
+    }
+
+    .portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ajuste l’image sans déformer */
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+    .feature-image {
+      width: 100%;
+      border-radius: 8px;
+      margin: 15px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .image-grid {
+      display: flex;
+      gap: 15px;
+      margin: 20px 0;
+    }
+    .image-grid div {
+      flex: 1;
+    }
+    .image-grid img {
+      width: 100%;
+      border-radius: 6px;
+      height: 180px;
+      object-fit: cover;
+    }
+    @media (max-width: 992px) {
+      .image-column, 
+      .info-column {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0;
+      }
+      .image-column {
+        margin-bottom: 30px;
+      }
+      .image-grid {
+        flex-direction: column;
+      }
+      .image-grid img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="index.html"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="index.html"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#index.html"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="index.html"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="https://www.facebook.com/dridi.oumaima.585/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://github.com/oumaimaD"><i class="bi bi-github"></i></a>
+        
+        <a href="https://www.linkedin.com/in/dridi-oumaima-a61346218" class="linkedin"><i class="bi bi-linkedin"></i></a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">AutoPrix  - Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">AutoPrix</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="split-layout">
+          <!-- Image Column -->
+          <div class="image-column">
+            <div class="portfolio-image" data-aos="fade-right" data-aos-delay="150">
+              <img src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="AutoData Collector">
+            </div>
+          </div>
+
+          <!-- Info Column -->
+          <div class="info-column">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3>AutoData Collector</h3>
+              <ul>
+                <li><strong>Category</strong>: Data Science & Web Scraping</li>
+                <li><strong>Field</strong>: Tunisian Used Cars Market Analysis</li>
+                <li><strong>Project Date</strong>: July, 2024</li>
+                <li><strong>Demo URL</strong>: <a href="https://github.com/oumaimaD" target="_blank"></a>check github</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="row gy-4">
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Intelligent Market Analysis Solution</h2>
+              <p>
+                <strong>AutoData Collector</strong> is an advanced data engineering platform designed to transform how market intelligence is gathered in Tunisia's used automotive sector. By leveraging cutting-edge web scraping technologies and powerful data visualization tools, our solution delivers unprecedented insights into pricing dynamics, availability trends, and consumer behavior patterns.
+              </p>
+
+              <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Data Collection Process" class="feature-image">
+
+              <h4>Sophisticated Data Acquisition & Processing</h4>
+              <p>
+                Our multi-layered approach to data collection ensures comprehensive market coverage with exceptional accuracy:
+              </p>
+              <ul>
+                <li><b>Advanced Web Scraping Framework</b> – Custom-built extraction engines using BeautifulSoup and Scrapy to systematically gather structured vehicle listings from leading Tunisian automotive platforms.</li>
+                <li><b>Intelligent Data Purification</b> – Multi-stage cleaning pipeline that handles missing values, eliminates duplicates, normalizes text formats, and standardizes measurement units across all data points.</li>
+                <li><b>Robust Anti-Detection Mechanisms</b> – Sophisticated IP rotation and request throttling to ensure uninterrupted data collection.</li>
+                <li><b>Scalable Data Architecture</b> – MongoDB integration designed for flexible schema management and efficient handling of large-scale, heterogeneous automotive data.</li>
+              </ul>
+
+              <div class="image-grid">
+                <div>
+                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Data Processing">
+                </div>
+                <div>
+                  <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Data Visualization">
+                </div>
+                <div>
+                  <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Database Management">
+                </div>
+              </div>
+
+              <h4>Enterprise-Grade Deployment Architecture</h4>
+              <p>
+                The platform is delivered through a robust Flask web application that provides:
+              </p>
+              <ul>
+                <li><b>Interactive Data Exploration</b> – Intuitive interface with dynamic filters for brand, model, price range, production year, and geographical distribution.</li>
+                <li><b>Seamless Data Export</b> – One-click export functionality supporting multiple formats including CSV, Excel, and JSON for further analysis.</li>
+                <li><b>Real-time Analytics Dashboard</b> – Live visualizations showing market trends, price distributions, and inventory turnover metrics.</li>
+                <li><b>Secure User Authentication</b> – Role-based access controls ensuring data integrity and confidentiality.</li>
+              </ul>
+
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Dashboard Interface" class="feature-image">
+
+              <h4>Advanced Visualization & Business Intelligence</h4>
+              <p>
+                Our Power BI integration delivers sophisticated analytical capabilities:
+              </p>
+              <ul>
+                <li><b>Market Intelligence Dashboard</b> – Comprehensive overview of pricing trends, inventory levels, and market dynamics across all vehicle categories.</li>
+                <li><b>Competitive Positioning Analysis</b> – Side-by-side comparison tools that benchmark vehicles against competitors based on price, features, and market availability.</li>
+                <li><b>Predictive Pricing Models</b> – Machine learning algorithms that forecast price fluctuations based on historical trends, seasonal patterns, and economic indicators.</li>
+                <li><b>Custom Reporting Suite</b> – Automated generation of detailed market reports with executive summaries, trend analyses, and investment recommendations.</li>
+              </ul>
+
+              <h4>Strategic Impact & Business Value</h4>
+              <p>
+                AutoData Collector has demonstrated significant transformational impact:
+              </p>
+              <ul>
+                <li><b>Market Efficiency Transformation</b> – Reduced market research time from weeks to minutes, enabling real-time decision making.</li>
+                <li><b>Competitive Advantage Development</b> – Identified pricing anomalies and market opportunities that deliver measurable ROI.</li>
+                <li><b>Data-Driven Decision Culture</b> – Empowered both individual consumers and enterprise clients with actionable intelligence.</li>
+                <li><b>Foundation for AI Expansion</b> – Established scalable infrastructure for future implementation of predictive analytics and machine learning models.</li>
+              </ul>
+
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Business Intelligence" class="feature-image">
+
+              <p>
+                By integrating <b>cutting-edge data engineering methodologies</b> with <b>advanced business intelligence visualization</b>, 
+                AutoData Collector represents a paradigm shift in how market intelligence is gathered, analyzed, and utilized 
+                within Tunisia's automotive sector, establishing new standards for data-driven decision making.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Portfolio</strong> <span>All Rights Reserved</span>
+        </p>
+      </div>
+      <div class="credits">
+        Designed by <a href="#">Dridi Oumaima</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

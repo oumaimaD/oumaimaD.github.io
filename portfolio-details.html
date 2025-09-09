@@ -1,0 +1,210 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>StrokeVision Details</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="index.html"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="index.html"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#index.html"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="index.html"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="https://www.facebook.com/dridi.oumaima.585/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://github.com/oumaimaD"><i class="bi bi-github"></i></a>
+        
+        <a href="https://www.linkedin.com/in/dridi-oumaima-a61346218" class="linkedin"><i class="bi bi-linkedin"></i></a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">StrokeVision Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">StrokeVision Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <!-- Vidéo -->
+          <div class="col-lg-8">
+            <div class="ratio ratio-16x9 shadow rounded" data-aos="fade-up" data-aos-delay="200">
+              <video controls poster="assets/img/portfolio/cre.jpg" class="w-100 h-100">
+                <source src="assets/img/portfolio/Projet_fin-etude.mp4" type="video/mp4">
+               
+              </video>
+            </div>
+          </div>
+
+          <!-- Infos projet -->
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3>StrokeVision - Advanced Stroke Analysis</h3>
+              <ul>
+                <li><strong>Category</strong>: Medical Imaging & AI</li>
+                <li><strong>Field</strong>: Brain Stroke Detection & Segmentation</li>
+                <li><strong>Project Date</strong>: November, 2023</li>
+                <li><strong>Demo URL</strong>: 
+                  <a href="./assets/portfolio/Projet_fin-etude.mp4" target="_blank">Watch Online</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Our Solution</h2>
+              <p>
+                <strong>StrokeVision</strong> is an end-to-end intelligent platform that revolutionizes <em>stroke lesion detection and segmentation</em> from MRI scans.
+                Designed with both <b>medical accuracy</b> and <b>computational efficiency</b> in mind, it integrates 
+                advanced image preprocessing, a rich palette of segmentation techniques, and robust evaluation strategies.
+              </p>
+
+              <h4>Preprocessing & Filtering</h4>
+              <ul>
+                <li><b>Gaussian Blur</b> – reduces Gaussian noise while preserving structural details.</li>
+                <li><b>Mean & Median Filters</b> – smooth tissue regions and eliminate salt-and-pepper noise.</li>
+                <li><b>Motion Blur Kernel</b> – simulates real patient motion and improves robustness.</li>
+                <li><b>Adaptive Canny Edge Detection</b> – highlights critical brain boundaries with dynamic thresholds.</li>
+              </ul>
+
+              <h4>Segmentation Palette</h4>
+              <ul>
+                <li><b>Chan-Vese Active Contours</b> – precise region-based segmentation.</li>
+                <li><b>K-Means Clustering</b> – unsupervised intensity-based partitioning.</li>
+                <li><b>Gaussian Mixture Models (GMM)</b> – probabilistic clustering for heterogeneous tissues.</li>
+                <li><b>U-Net Deep Learning Model</b> – state-of-the-art segmentation with pixel-level accuracy.</li>
+              </ul>
+
+              <h4>Data Augmentation</h4>
+              <p>
+                To improve model generalization, StrokeVision applies extensive <b>data augmentation</b> techniques:
+                rotations, horizontal/vertical flips, intensity shifts, random noise injection, and contrast variations.  
+                In addition, a <b>GAN Pix2Pix model</b> was trained to generate synthetic MRI scans, 
+                expanding the dataset with realistic variations and significantly boosting segmentation robustness.
+              </p>
+
+              <h4>Evaluation & Clinical Impact</h4>
+              <p>
+                Segmentation performance is rigorously validated with <b>Adjusted Rand Index (ARI=0.928)</b>, 
+                <b>Normalized Mutual Information (NMI=0.875)</b>, and <b>Silhouette Score=0.850</b>. 
+                The resulting system delivers:
+              </p>
+              <ul>
+                <li><b>Faster diagnostic support</b> for neurologists.</li>
+                <li><b>Early detection</b> of stroke lesions for timely intervention.</li>
+                <li><b>Improved patient outcomes</b> through AI-assisted decision-making.</li>
+              </ul>
+
+              <p>
+                By bridging <b>medical imaging expertise</b> with <b>artificial intelligence innovation</b>, 
+                StrokeVision is a powerful demonstration of how AI can actively assist clinicians and transform healthcare.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Portfolio</strong> <span>All Rights Reserved</span>
+        </p>
+      </div>
+      <div class="credits">
+        Designed by <a href="#">Dridi Oumaima</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
